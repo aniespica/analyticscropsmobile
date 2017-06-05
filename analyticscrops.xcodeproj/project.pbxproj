@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9EB1DDE09D2254E84F1F0BE7 /* Pods_analyticscrops.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78A2E2EA871A078FFDE45F51 /* Pods_analyticscrops.framework */; };
+		E91E69421ED1E852008A86B5 /* CollectionCropController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91E69411ED1E852008A86B5 /* CollectionCropController.swift */; };
+		E91E69441ED1FF16008A86B5 /* Lote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91E69431ED1FF16008A86B5 /* Lote.swift */; };
+		E96381871ED612FB00BEA112 /* CropLotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96381861ED612FB00BEA112 /* CropLotesCell.swift */; };
+		E96381891ED63FA100BEA112 /* CropInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96381881ED63FA100BEA112 /* CropInfoView.swift */; };
+		E963818B1ED6827A00BEA112 /* CollectionLoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E963818A1ED6827A00BEA112 /* CollectionLoteController.swift */; };
+		E963818D1ED683A800BEA112 /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E963818C1ED683A800BEA112 /* Variable.swift */; };
+		E96C5C2F1ED0C5E500AD3B34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96C5C2E1ED0C5E500AD3B34 /* AppDelegate.swift */; };
+		E96C5C311ED0C5E500AD3B34 /* CropsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96C5C301ED0C5E500AD3B34 /* CropsController.swift */; };
+		E96C5C341ED0C5E500AD3B34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96C5C321ED0C5E500AD3B34 /* Main.storyboard */; };
+		E96C5C361ED0C5E500AD3B34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E96C5C351ED0C5E500AD3B34 /* Assets.xcassets */; };
+		E96C5C391ED0C5E500AD3B34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96C5C371ED0C5E500AD3B34 /* LaunchScreen.storyboard */; };
+		E96C5C441ED0C7C400AD3B34 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96C5C431ED0C7C400AD3B34 /* LoginController.swift */; };
+		E96C5C461ED0CABA00AD3B34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E96C5C451ED0CABA00AD3B34 /* GoogleService-Info.plist */; };
+		E96C5C481ED0D1D500AD3B34 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96C5C471ED0D1D500AD3B34 /* User.swift */; };
+		E96C5C4E1ED1024100AD3B34 /* Crop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96C5C4D1ED1024100AD3B34 /* Crop.swift */; };
+		E99FD8851ED89CF600E55745 /* CollectionVariableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99FD8841ED89CF600E55745 /* CollectionVariableController.swift */; };
+		E99FD8871ED89EE200E55745 /* VariableInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99FD8861ED89EE200E55745 /* VariableInfoView.swift */; };
+		E99FD88D1ED8FC7400E55745 /* AddSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99FD88C1ED8FC7400E55745 /* AddSensor.swift */; };
+		E99FD88F1ED9070800E55745 /* AddValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99FD88E1ED9070800E55745 /* AddValue.swift */; };
+		E99FD8901ED9370E00E55745 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99FD88A1ED8A21300E55745 /* Charts.framework */; };
+		E99FD8941ED9375600E55745 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99FD8931ED9375600E55745 /* Charts.framework */; };
+		E99FD8951ED9375600E55745 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E99FD8931ED9375600E55745 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E99FD8981ED955D900E55745 /* InitValuesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99FD8971ED955D900E55745 /* InitValuesCell.swift */; };
+		E9CF22551ED7E21F0049CF6B /* AddLote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CF22541ED7E21F0049CF6B /* AddLote.swift */; };
+		E9CF22571ED7EDB50049CF6B /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CF22561ED7EDB50049CF6B /* Value.swift */; };
+		E9CF22591ED7EFA80049CF6B /* LoteInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CF22581ED7EFA80049CF6B /* LoteInfoView.swift */; };
+		E9F6039F1ED728130079F130 /* AddCrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F6039E1ED728130079F130 /* AddCrop.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E99FD8961ED9375600E55745 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E99FD8951ED9375600E55745 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		131C4DDEB012437571398D7B /* Pods-analyticscrops.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-analyticscrops.release.xcconfig"; path = "Pods/Target Support Files/Pods-analyticscrops/Pods-analyticscrops.release.xcconfig"; sourceTree = "<group>"; };
+		78A2E2EA871A078FFDE45F51 /* Pods_analyticscrops.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_analyticscrops.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		882A223CB20D174D7AC32FC3 /* Pods-analyticscrops.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-analyticscrops.debug.xcconfig"; path = "Pods/Target Support Files/Pods-analyticscrops/Pods-analyticscrops.debug.xcconfig"; sourceTree = "<group>"; };
+		E91E69411ED1E852008A86B5 /* CollectionCropController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCropController.swift; sourceTree = "<group>"; };
+		E91E69431ED1FF16008A86B5 /* Lote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lote.swift; sourceTree = "<group>"; };
+		E96381861ED612FB00BEA112 /* CropLotesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropLotesCell.swift; sourceTree = "<group>"; };
+		E96381881ED63FA100BEA112 /* CropInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropInfoView.swift; sourceTree = "<group>"; };
+		E963818A1ED6827A00BEA112 /* CollectionLoteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionLoteController.swift; sourceTree = "<group>"; };
+		E963818C1ED683A800BEA112 /* Variable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Variable.swift; sourceTree = "<group>"; };
+		E96C5C2B1ED0C5E500AD3B34 /* analyticscrops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = analyticscrops.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E96C5C2E1ED0C5E500AD3B34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E96C5C301ED0C5E500AD3B34 /* CropsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropsController.swift; sourceTree = "<group>"; };
+		E96C5C331ED0C5E500AD3B34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E96C5C351ED0C5E500AD3B34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E96C5C381ED0C5E500AD3B34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E96C5C3A1ED0C5E500AD3B34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E96C5C431ED0C7C400AD3B34 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		E96C5C451ED0CABA00AD3B34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E96C5C471ED0D1D500AD3B34 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E96C5C4D1ED1024100AD3B34 /* Crop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crop.swift; sourceTree = "<group>"; };
+		E99FD8841ED89CF600E55745 /* CollectionVariableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionVariableController.swift; sourceTree = "<group>"; };
+		E99FD8861ED89EE200E55745 /* VariableInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariableInfoView.swift; sourceTree = "<group>"; };
+		E99FD88A1ED8A21300E55745 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = "../../../../Downloads/Charts-3.0.0/build/Debug/Charts.framework"; sourceTree = "<group>"; };
+		E99FD88C1ED8FC7400E55745 /* AddSensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSensor.swift; sourceTree = "<group>"; };
+		E99FD88E1ED9070800E55745 /* AddValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddValue.swift; sourceTree = "<group>"; };
+		E99FD8931ED9375600E55745 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99FD8971ED955D900E55745 /* InitValuesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitValuesCell.swift; sourceTree = "<group>"; };
+		E9CF22541ED7E21F0049CF6B /* AddLote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLote.swift; sourceTree = "<group>"; };
+		E9CF22561ED7EDB50049CF6B /* Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
+		E9CF22581ED7EFA80049CF6B /* LoteInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoteInfoView.swift; sourceTree = "<group>"; };
+		E9F6039E1ED728130079F130 /* AddCrop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCrop.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E96C5C281ED0C5E500AD3B34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99FD8941ED9375600E55745 /* Charts.framework in Frameworks */,
+				E99FD8901ED9370E00E55745 /* Charts.framework in Frameworks */,
+				9EB1DDE09D2254E84F1F0BE7 /* Pods_analyticscrops.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8D886195C7D7BD27DFB0850 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				882A223CB20D174D7AC32FC3 /* Pods-analyticscrops.debug.xcconfig */,
+				131C4DDEB012437571398D7B /* Pods-analyticscrops.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BCF10EC26EAD41334C3AF841 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E99FD88A1ED8A21300E55745 /* Charts.framework */,
+				78A2E2EA871A078FFDE45F51 /* Pods_analyticscrops.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E96C5C221ED0C5E500AD3B34 = {
+			isa = PBXGroup;
+			children = (
+				E99FD8931ED9375600E55745 /* Charts.framework */,
+				E96C5C2D1ED0C5E500AD3B34 /* analyticscrops */,
+				E96C5C2C1ED0C5E500AD3B34 /* Products */,
+				A8D886195C7D7BD27DFB0850 /* Pods */,
+				BCF10EC26EAD41334C3AF841 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E96C5C2C1ED0C5E500AD3B34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E96C5C2B1ED0C5E500AD3B34 /* analyticscrops.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E96C5C2D1ED0C5E500AD3B34 /* analyticscrops */ = {
+			isa = PBXGroup;
+			children = (
+				E96C5C421ED0C79400AD3B34 /* View */,
+				E96C5C411ED0C78D00AD3B34 /* Model */,
+				E96C5C401ED0C78700AD3B34 /* Controller */,
+				E96C5C2E1ED0C5E500AD3B34 /* AppDelegate.swift */,
+				E96C5C321ED0C5E500AD3B34 /* Main.storyboard */,
+				E96C5C351ED0C5E500AD3B34 /* Assets.xcassets */,
+				E96C5C371ED0C5E500AD3B34 /* LaunchScreen.storyboard */,
+				E96C5C3A1ED0C5E500AD3B34 /* Info.plist */,
+				E96C5C451ED0CABA00AD3B34 /* GoogleService-Info.plist */,
+			);
+			path = analyticscrops;
+			sourceTree = "<group>";
+		};
+		E96C5C401ED0C78700AD3B34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E96C5C301ED0C5E500AD3B34 /* CropsController.swift */,
+				E96C5C431ED0C7C400AD3B34 /* LoginController.swift */,
+				E91E69411ED1E852008A86B5 /* CollectionCropController.swift */,
+				E963818A1ED6827A00BEA112 /* CollectionLoteController.swift */,
+				E99FD8841ED89CF600E55745 /* CollectionVariableController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E96C5C411ED0C78D00AD3B34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E96C5C471ED0D1D500AD3B34 /* User.swift */,
+				E96C5C4D1ED1024100AD3B34 /* Crop.swift */,
+				E91E69431ED1FF16008A86B5 /* Lote.swift */,
+				E963818C1ED683A800BEA112 /* Variable.swift */,
+				E9CF22561ED7EDB50049CF6B /* Value.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E96C5C421ED0C79400AD3B34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E96381861ED612FB00BEA112 /* CropLotesCell.swift */,
+				E96381881ED63FA100BEA112 /* CropInfoView.swift */,
+				E9F6039E1ED728130079F130 /* AddCrop.swift */,
+				E9CF22541ED7E21F0049CF6B /* AddLote.swift */,
+				E9CF22581ED7EFA80049CF6B /* LoteInfoView.swift */,
+				E99FD8861ED89EE200E55745 /* VariableInfoView.swift */,
+				E99FD88C1ED8FC7400E55745 /* AddSensor.swift */,
+				E99FD88E1ED9070800E55745 /* AddValue.swift */,
+				E99FD8971ED955D900E55745 /* InitValuesCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E96C5C2A1ED0C5E500AD3B34 /* analyticscrops */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E96C5C3D1ED0C5E500AD3B34 /* Build configuration list for PBXNativeTarget "analyticscrops" */;
+			buildPhases = (
+				A0D5AD1D8BC2E9DC45150394 /* [CP] Check Pods Manifest.lock */,
+				E96C5C271ED0C5E500AD3B34 /* Sources */,
+				E96C5C281ED0C5E500AD3B34 /* Frameworks */,
+				E96C5C291ED0C5E500AD3B34 /* Resources */,
+				A14F7DA3D0FBFBD714B37DBF /* [CP] Embed Pods Frameworks */,
+				87D3D841F85975B83E7FA863 /* [CP] Copy Pods Resources */,
+				E99FD8961ED9375600E55745 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = analyticscrops;
+			productName = analyticscrops;
+			productReference = E96C5C2B1ED0C5E500AD3B34 /* analyticscrops.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E96C5C231ED0C5E500AD3B34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = aniespica;
+				TargetAttributes = {
+					E96C5C2A1ED0C5E500AD3B34 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 69NW7J37HT;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E96C5C261ED0C5E500AD3B34 /* Build configuration list for PBXProject "analyticscrops" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E96C5C221ED0C5E500AD3B34;
+			productRefGroup = E96C5C2C1ED0C5E500AD3B34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E96C5C2A1ED0C5E500AD3B34 /* analyticscrops */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E96C5C291ED0C5E500AD3B34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E96C5C391ED0C5E500AD3B34 /* LaunchScreen.storyboard in Resources */,
+				E96C5C461ED0CABA00AD3B34 /* GoogleService-Info.plist in Resources */,
+				E96C5C361ED0C5E500AD3B34 /* Assets.xcassets in Resources */,
+				E96C5C341ED0C5E500AD3B34 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87D3D841F85975B83E7FA863 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-analyticscrops/Pods-analyticscrops-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0D5AD1D8BC2E9DC45150394 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A14F7DA3D0FBFBD714B37DBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-analyticscrops/Pods-analyticscrops-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E96C5C271ED0C5E500AD3B34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E963818B1ED6827A00BEA112 /* CollectionLoteController.swift in Sources */,
+				E99FD8981ED955D900E55745 /* InitValuesCell.swift in Sources */,
+				E9CF22551ED7E21F0049CF6B /* AddLote.swift in Sources */,
+				E9CF22571ED7EDB50049CF6B /* Value.swift in Sources */,
+				E99FD88D1ED8FC7400E55745 /* AddSensor.swift in Sources */,
+				E96C5C481ED0D1D500AD3B34 /* User.swift in Sources */,
+				E96381871ED612FB00BEA112 /* CropLotesCell.swift in Sources */,
+				E99FD8851ED89CF600E55745 /* CollectionVariableController.swift in Sources */,
+				E91E69441ED1FF16008A86B5 /* Lote.swift in Sources */,
+				E96C5C311ED0C5E500AD3B34 /* CropsController.swift in Sources */,
+				E9CF22591ED7EFA80049CF6B /* LoteInfoView.swift in Sources */,
+				E99FD8871ED89EE200E55745 /* VariableInfoView.swift in Sources */,
+				E96C5C441ED0C7C400AD3B34 /* LoginController.swift in Sources */,
+				E963818D1ED683A800BEA112 /* Variable.swift in Sources */,
+				E91E69421ED1E852008A86B5 /* CollectionCropController.swift in Sources */,
+				E99FD88F1ED9070800E55745 /* AddValue.swift in Sources */,
+				E96C5C2F1ED0C5E500AD3B34 /* AppDelegate.swift in Sources */,
+				E96381891ED63FA100BEA112 /* CropInfoView.swift in Sources */,
+				E96C5C4E1ED1024100AD3B34 /* Crop.swift in Sources */,
+				E9F6039F1ED728130079F130 /* AddCrop.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E96C5C321ED0C5E500AD3B34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E96C5C331ED0C5E500AD3B34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E96C5C371ED0C5E500AD3B34 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E96C5C381ED0C5E500AD3B34 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E96C5C3B1ED0C5E500AD3B34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		E96C5C3C1ED0C5E500AD3B34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E96C5C3E1ED0C5E500AD3B34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 882A223CB20D174D7AC32FC3 /* Pods-analyticscrops.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 69NW7J37HT;
+				INFOPLIST_FILE = analyticscrops/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aniespica.analyticscrops1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E96C5C3F1ED0C5E500AD3B34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 131C4DDEB012437571398D7B /* Pods-analyticscrops.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 69NW7J37HT;
+				INFOPLIST_FILE = analyticscrops/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = aniespica.analyticscrops1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E96C5C261ED0C5E500AD3B34 /* Build configuration list for PBXProject "analyticscrops" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E96C5C3B1ED0C5E500AD3B34 /* Debug */,
+				E96C5C3C1ED0C5E500AD3B34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E96C5C3D1ED0C5E500AD3B34 /* Build configuration list for PBXNativeTarget "analyticscrops" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E96C5C3E1ED0C5E500AD3B34 /* Debug */,
+				E96C5C3F1ED0C5E500AD3B34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E96C5C231ED0C5E500AD3B34 /* Project object */;
+}
